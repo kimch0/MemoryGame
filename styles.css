@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu button {
+    height: 40px;
+    width: 200px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+
+}
+
+#menu button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 5px;
+    place-items: center;
+    /* border: 2px dashed black; */
+    padding: 30px;
+    border-radius: 50px;
+    background: #ffffff;
+
+}
+#content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {   
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#reset,
+#change-difficulty {
+    display: none;
+    /* display: inline-block; */
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin-top: 1em;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 5s infinite linear;
+    position: relative;
+    background-color: rgb(55, 56, 56);
+
+}
+
+#reset:hover,
+#change-difficulty:hover {
+    background-color: white;
+    color: #000000;
+}
+
+@keyframes bn13bouncy {
+    0% {
+        top: 0em;
+    }
+
+    40% {
+        top: 0em;
+    }
+
+    43% {
+        top: -0.9em;
+    }
+
+    46% {
+        top: 0em;
+    }
+
+    48% {
+        top: -0.4em;
+    }
+
+    50% {
+        top: 0em;
+    }
+
+    100% {
+        top: 0em;
+    }
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "lobo",
+        "img": "images/lobo.png"
+    },
+    {
+        "name": "vaca",
+        "img": "images/vaca.png"
+    },
+    {
+        "name": "mono",
+        "img": "images/mono.png"
+    },
+    {
+        "name": "koala",
+        "img": "images/koala.png"
+    },
+    {
+        "name": "leon",
+        "img": "images/leon.png"
+    },
+    {
+        "name": "canguro",
+        "img": "images/canguro.png"
+    },
+    {
+        "name": "cabra",
+        "img": "images/cabra.png"
+    },
+    {
+        "name": "cabra2",
+        "img": "images/cabra2.png"
+    },
+    {
+        "name": "cerdo",
+        "img": "images/cerdo.png"
+    },
+    {
+        "name": "oveja",
+        "img": "images/oveja.png"
+    },
+    {
+        "name": "conejo",
+        "img": "images/conejo.png"
+    },
+    {
+        "name": "perro",
+        "img": "images/perro.png"
+    }
+]
