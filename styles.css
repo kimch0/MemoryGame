@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "W95FA";
+    src:
+        url("./fonts/w95fa.woff2") format("woff2"),
+        url("./fonts/w95fa.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: "W95FA", sans-serif !important;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -6,7 +19,6 @@
     height: 95vh;
     width: 100%;
     gap: 10px;
-    font-family: "Roboto", sans-serif;
 }
 
 #menu {
@@ -25,8 +37,8 @@
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
-    font-weight: 300;
-
+    font-weight: 400;
+    font-size: 16px;
 }
 
 #menu button:hover {
@@ -38,7 +50,7 @@
 #grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
     gap: 5px;
     place-items: center;
     /* border: 2px dashed black; */
@@ -47,6 +59,7 @@
     background: #ffffff;
 
 }
+
 #content {
     display: none;
     flex-direction: column;
@@ -54,42 +67,45 @@
     align-items: center;
 }
 
-img {   
+img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
+    image-rendering: pixelated;
 }
 
 img:hover {
     cursor: pointer;
+    background: #e0e0e0;
+    box-shadow: 2px 2px 1px #5a5a5a,
+        -2px -2px 1px #ffffff;
 }
 
 #reset,
 #change-difficulty {
     display: none;
-    /* display: inline-block; */
     padding: 0.65em 1.6em;
     border: 3px solid #ffffff;
     margin-top: 1em;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #ffffff;
     text-align: center;
     transition: all 0.2s;
     animation: bn13bouncy 5s infinite linear;
     position: relative;
     background-color: rgb(55, 56, 56);
-
+    font-size: 14px;
 }
 
 #reset:hover,
 #change-difficulty:hover {
     background-color: white;
     color: #000000;
+    cursor: pointer;
 }
 
 @keyframes bn13bouncy {
